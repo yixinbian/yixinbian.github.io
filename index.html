@@ -3,14 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>您的名字 (Your Name) - Homepage</title>
-    <!-- 引入现代化 Bootstrap 5 框架 -->
+    <title>Your Name - Homepage</title>
+    <!-- Bootstrap 5 Framework -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-    <!-- 引入学术主页常用的字体和图标 -->
+    <!-- Academic Fonts and Icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     
     <style>
-        /* 1. 基础全局样式（高阶学术感色调） */
+        /* 1. Global Styles */
         body {
             font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
             color: #333333;
@@ -18,7 +18,7 @@
             line-height: 1.6;
         }
         
-        /* 2. Header (导航栏) 样式调整 */
+        /* 2. Header (Navbar) Styles */
         .navbar {
             background-color: #ffffff !important;
             border-bottom: 1px solid #e5e5e5;
@@ -33,12 +33,12 @@
             margin-left: 15px;
         }
         .nav-link:hover {
-            color: #0066cc !important; /* 学术蓝 */
+            color: #0066cc !important; /* Academic Blue */
         }
 
-        /* 3. 各模块间距与锚点对齐 */
+        /* 3. Section Padding and Anchor Alignment */
         section {
-            padding-top: 80px;  /* 防止被顶部固定导航栏遮挡 */
+            padding-top: 80px;  /* Premium gap preventing fixed navbar overlap */
             margin-top: -40px;
             margin-bottom: 3.5rem;
         }
@@ -51,7 +51,7 @@
             margin-bottom: 20px;
         }
 
-        /* 4. Profile Section (个人简介) 样式 */
+        /* 4. Profile Section Styles */
         .avatar-container img {
             width: 100%;
             max-width: 210px;
@@ -70,7 +70,7 @@
             border-radius: 0 4px 4px 0;
         }
 
-        /* 5. News (新闻) 样式 */
+        /* 5. News Styles */
         .news-date {
             font-weight: 600;
             color: #666666;
@@ -78,13 +78,13 @@
             display: inline-block;
         }
 
-        /* 6. Education & Experience (经历) 样式 */
+        /* 6. Education & Experience Styles */
         .exp-date {
             color: #666666;
             font-weight: 500;
         }
 
-        /* 7. Selected Publications (论文) 样式 */
+        /* 7. Selected Publications Styles */
         .pub-item {
             margin-bottom: 25px;
         }
@@ -97,7 +97,7 @@
             transition: transform 0.2s;
         }
         .pub-img:hover {
-            transform: scale(1.02); /* 鼠标悬停微放大效果 */
+            transform: scale(1.02);
         }
         .pub-title {
             font-weight: 700;
@@ -107,7 +107,7 @@
         }
         .author-self {
             font-weight: 700;
-            text-decoration: underline; /* 自己的名字加粗下划线 */
+            text-decoration: underline;
         }
         .pub-venue {
             font-style: italic;
@@ -124,7 +124,7 @@
             text-decoration: underline;
         }
 
-        /* 8. 页脚 */
+        /* 8. Footer */
         footer {
             background-color: #f9f9f9;
             font-size: 0.9rem;
@@ -134,7 +134,7 @@
 </head>
 <body>
 
-    <!-- 1. Header (固定在顶部的导航栏) -->
+    <!-- 1. Header (Navigation Bar) -->
     <nav class="navbar navbar-expand-md navbar-light sticky-top shadow-sm">
         <div class="container">
             <a class="navbar-brand" href="#home">Your Name</a>
@@ -153,22 +153,21 @@
         </div>
     </nav>
 
-    <!-- 主体布局容器 -->
+    <!-- Main Content Container -->
     <div class="container mt-4" style="max-width: 1000px;">
         
-        <!-- 2. Profile Section (个人简介) -->
+        <!-- 2. Profile Section -->
         <section id="home" class="row align-items-start pt-5">
             <div class="col-md-3 text-center mb-4 mb-md-0 avatar-container">
-                <!-- 头像图：存放在 images 文件夹下 -->
                 <img src="images/avatar.jpg" alt="Your Photo">
             </div>
             <div class="col-md-9 px-md-4">
-                <h1 class="profile-name mb-1">您的中文名 (Your English Name)</h1>
-                <p class="lead text-secondary mb-3">当前职位 (如：Ph.D. Student / Assistant Professor) <br> 单位/学院名称, 某某大学</p>
+                <h1 class="profile-name mb-1">Your Name</h1>
+                <p class="lead text-secondary mb-3">Ph.D. Student / Assistant Professor <br> Department of Computer Science, University Name</p>
                 
                 <div class="mb-3" style="font-size: 0.95rem;">
                     <div><i class="fa-regular fa-envelope me-2"></i><strong>Email:</strong> your_email [at] university.edu.cn</div>
-                    <div><i class="fa-solid fa-location-dot me-2"></i><strong>Office:</strong> 某某楼 501 室, 某某校区</div>
+                    <div><i class="fa-solid fa-location-dot me-2"></i><strong>Office:</strong> Room 501, Building Name, Main Campus</div>
                     <div>
                         <i class="fa-brands fa-github me-2"></i><a href="#" class="text-decoration-none">GitHub</a> &nbsp;|&nbsp;
                         <i class="fa-solid fa-graduation-cap me-2"></i><a href="#" class="text-decoration-none">Google Scholar</a>
@@ -176,67 +175,66 @@
                 </div>
                 
                 <p class="mb-3">
-                    <strong>Bio:</strong> 在这里用几句话简单介绍您的学术背景。例如：我于 2024 年在某某大学获得学士学位，目前在某某实验室攻读博士/硕士学位，导师是某某教授。我的研究旨在解决软件工程、深度学习模型安全或系统性能优化等关键技术问题。
+                    <strong>Biography:</strong> I am currently a Ph.D. / Master's student at University Name, advised by Prof. Excellent Advisor. Before that, I received my Bachelor's degree from University Name in 2024. My research focuses on solving critical challenges in software engineering, system security, and machine learning systems.
                 </p>
                 
                 <p class="mb-4">
-                    <strong>Research Interests:</strong> 软件工程 (Software Engineering) | 智能化软件开发 (AI for SE) | 软件挖掘技术 (Repository Mining)。
+                    <strong>Research Interests:</strong> Software Engineering | AI for SE | Mining Software Repositories | Deep Learning Security.
                 </p>
 
-                <!-- Openings 招生信息容器 -->
+                <!-- Openings Container -->
                 <div class="openings-box">
                     <i class="fa-solid fa-bullhorn text-primary me-2"></i>
-                    <strong>Openings:</strong> 我正在寻找积极主动的硕士研究生/本科实习生。如果您对我的研究方向感兴趣，请随时将您的简历和成绩单发送到我的邮箱。
+                    <strong>Openings:</strong> I am actively looking for self-motivated Master/Undergraduate students. If you are interested in working with me, please feel free to drop me an email with your CV and transcripts.
                 </div>
             </div>
         </section>
 
-        <!-- 3. News (新闻动态) -->
+        <!-- 3. News Section -->
         <section id="news">
             <h2 class="section-title">News</h2>
             <div class="row mb-2">
-                <div class="col-auto news-date">[2026.05]</div>
-                <div class="col">我们的最新研究成果被软件工程顶级学术期刊 <strong>TOSEM</strong> 接收！</div>
+                <div class="col-auto news-date">[May 2026]</div>
+                <div class="col">Our paper on automated code refactoring has been accepted by <strong>TOSEM</strong>!</div>
             </div>
             <div class="row mb-2">
-                <div class="col-auto news-date">[2026.03]</div>
-                <div class="col">荣获某某大学“优秀研究生”或“最佳论文奖”称号。</div>
+                <div class="col-auto news-date">[Mar 2026]</div>
+                <div class="col">Honored to receive the "Outstanding Graduate Student" / "Best Paper" Award.</div>
             </div>
             <div class="row mb-2">
-                <div class="col-auto news-date">[2025.10]</div>
-                <div class="col">前往美国参加 <strong>ICSE 2025</strong> 国际学术会议并做口头报告。</div>
+                <div class="col-auto news-date">[Oct 2025]</div>
+                <div class="col">Attended <strong>ICSE 2025</strong> in the United States and delivered a conference talk.</div>
             </div>
         </section>
 
-        <!-- 4. Education & Experience (教育与工作经历) -->
+        <!-- 4. Education & Experience Section -->
         <section id="experience">
             <h2 class="section-title">Education & Experience</h2>
             
             <div class="row mb-3">
-                <div class="col-md-3 exp-date">2024.09 - Present</div>
+                <div class="col-md-3 exp-date">Sep 2024 - Present</div>
                 <div class="col-md-9">
-                    <strong>某某大学</strong> · 计算机学院 <br>
-                    <span class="text-secondary">博士/硕士研究生在读 (导师: 某某教授)</span>
+                    <strong>University Name</strong> · School of Computer Science <br>
+                    <span class="text-secondary">Ph.D. / M.S. Student in Computer Science (Advisor: Prof. Name)</span>
                 </div>
             </div>
             
             <div class="row mb-3">
-                <div class="col-md-3 exp-date">2020.09 - 2024.06</div>
+                <div class="col-md-3 exp-date">Sep 2020 - Jun 2024</div>
                 <div class="col-md-9">
-                    <strong>某某大学</strong> · 软件学院 <br>
-                    <span class="text-secondary">工学学士学位 (GPA: 3.9 / 4.0, 优秀毕业生)</span>
+                    <strong>University Name</strong> · School of Software Engineering <br>
+                    <span class="text-secondary">B.Eng. in Software Engineering (GPA: 3.9 / 4.0, Outstanding Graduate)</span>
                 </div>
             </div>
         </section>
 
-        <!-- 5. Selected Publications (精选论文) -->
+        <!-- 5. Selected Publications Section -->
         <section id="publications">
             <h2 class="section-title">Selected Publications</h2>
             
-            <!-- 论文 1 容器 -->
+            <!-- Paper 1 -->
             <div class="row pub-item align-items-center">
                 <div class="col-md-3 mb-2 mb-md-0 text-center">
-                    <!-- 论文左侧缩略图（通常是核心框架图或实验柱状图） -->
                     <img src="images/pub1_teaser.png" alt="Paper Teaser" class="pub-img">
                 </div>
                 <div class="col-md-9">
@@ -251,7 +249,7 @@
                 </div>
             </div>
 
-            <!-- 论文 2 容器 -->
+            <!-- Paper 2 -->
             <div class="row pub-item align-items-center">
                 <div class="col-md-3 mb-2 mb-md-0 text-center">
                     <img src="images/pub2_teaser.png" alt="Paper Teaser" class="pub-img">
@@ -269,7 +267,7 @@
             
         </section>
 
-        <!-- 6. Academic Services & Awards (学术服务与获奖) -->
+        <!-- 6. Academic Services & Awards Section -->
         <section id="services">
             <h2 class="section-title">Academic Services & Awards</h2>
             
@@ -281,19 +279,19 @@
 
             <h5 class="fw-bold text-dark mb-2" style="font-size: 1.1rem;">Selected Awards</h5>
             <ul>
-                <li>国家奖学金 (National Scholarship), 2025</li>
-                <li>国际会议最佳论文奖 (Best Paper Award), 某某会议, 2024</li>
+                <li>National Scholarship, Ministry of Education, 2025</li>
+                <li>Best Paper Award, International Conference Name, 2024</li>
             </ul>
         </section>
 
     </div>
 
-    <!-- 页脚 -->
+    <!-- Footer -->
     <footer class="text-center py-4 mt-5">
         <p class="text-muted mb-0">&copy; 2026 Your Name. Powered by GitHub Pages and Bootstrap.</p>
     </footer>
 
-    <!-- 引入 Bootstrap 5 官方脚本 -->
+    <!-- Bootstrap 5 JavaScript Bundle -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
